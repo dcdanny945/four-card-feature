@@ -1,0 +1,308 @@
+/* Css reset */
+
+  /*1. Use a more-intuitive box-sizing model.*/
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*2. Remove default margin*/
+  * {
+    margin: 0;
+  }
+  /*    Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering*/
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*    5. Improve media defaults*/
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*    6. Remove built-in form typography styles*/
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*    7. Avoid text overflows*/
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*    8. Create a root stacking context*/
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
+:root{
+
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+
+}
+
+/* font */
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+
+/* customzied style  for both*/
+
+  body{
+    font-family: "poppins";
+    color: var(--Very-Dark-Blue);
+}
+.wrapper{
+  /* border: 1px solid purple; */
+
+  display: grid;
+  place-content: center;
+  
+  padding: 1rem;
+
+  max-width: 52rem;
+
+}
+
+/* customzied style */
+/*  mobile version  */
+
+main{
+    min-height: 100vh;
+    /* border: 5px solid green; */
+    display: grid;
+    place-content: center;
+}
+
+.first-title{
+  /* border: 1px solid seagreen; */
+  /* line-height: 2; */
+  text-align: center;
+  font-weight: 300;
+}
+/* need to fix the line height */
+.sceond-title{
+  /* border: 1px solid palevioletred; */
+  text-align: center;
+  /* font-size: 2rem; */
+  /* line-height: 5rem; */
+}
+.title{
+  display: grid;
+  gap:1rem;
+  /* line-height: 1.75rem; */
+  /* border: 1px solid brown; */
+  padding: 3rem 0rem;
+}  
+.card.gird-layout[data-spacing="large"]{
+   padding: 3rem 0rem;
+}
+.title-intro{
+  /* border: 1px solid yellowgreen; */
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--Grayish-Blue);
+}
+.gird-layout{
+    /* border: 1px blue solid; */
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0rem;
+}
+.card{
+    padding: 1rem;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    box-shadow: 0.5rem 1rem 1rem rgb(0 0 0 / 0.2);
+    border-radius: 0.5rem;
+    /* min-width: 10rem; */
+    min-height: 6rem;
+}
+.card-content[data-card-content="medium"]{
+  padding: 0.5rem 0rem;
+}
+.card-svg{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-left: auto;
+}
+.card-title{
+  /* font-weight: 500; */
+  font-weight: bold;
+}
+/* each card  */
+.card-left{
+  border-top: 5px solid var(--Cyan);
+}
+
+.card-center-1{
+  border-top: 5px solid var(--Red);
+}
+
+.card-center-2{
+  border-top: 5px solid var(--Orange);
+}
+
+.card-right{
+  border-top: 5px solid var(--Blue);
+}
+.center{
+  display: grid;
+  gap: 1rem;
+}
+
+/* desktop */
+@media (min-width:600px) {
+  .wrapper{
+    display: grid;
+    place-content: center;
+    margin: auto;
+  }
+  .gird-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+  .center{
+    display: grid;
+    /* flex-direction: column; */
+    gap: 1rem;
+  }
+  .title{
+    padding: 0;
+    /* border: 1px solid brown; */
+  }
+  .title-intro{
+    /* border: 1px solid yellowgreen; */
+    padding: 0rem 7rem;
+  }
+  .card{
+    min-height: 6rem;
+  }
+
+}
+
+
+
+/* footer */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
